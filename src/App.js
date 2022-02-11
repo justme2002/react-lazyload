@@ -35,7 +35,7 @@ function App() {
     <Container maxW = {"container.xl"}>
       {data.map(d => (
         <LazyLoad key = {d.id} offset={[-100, 100]}  placeholder = {<Loading />}>
-        <Box color = "white" mt = "3px" h = "200px">
+        <Box bg = "teal" color = "white" mt = "3px" h = "200px">
           <Post id = {d.id} title = {d.title} body= {d.body} />
         </Box>
         </LazyLoad>
